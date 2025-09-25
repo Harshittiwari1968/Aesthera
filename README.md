@@ -1,12 +1,62 @@
-# React + Vite
+🌌 Aesthera
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aesthera is a modern web project crafted with creativity and functionality in mind. Our mission is to build digital experiences that are not only visually stunning but also highly efficient and user-friendly.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Minimal & Aesthetic Design – Clean, modern, and user-focused interface
 
-## Expanding the ESLint configuration
+⚡ Fast & Responsive – Optimized for all devices and screen sizes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 Scalable Architecture – Easy to extend and maintain
+
+🤝 Team-Driven – Built with collaboration, passion, and innovation
+
+🛠 Tech Stack
+
+Frontend: React.js / HTML / CSS / JavaScript
+
+Styling: Tailwind CSS / Custom CSS
+
+Version Control: Git & GitHub
+
+Other Tools: VS Code, npm/yarn
+
+👨‍💻 Our Team
+
+Harshit Tiwari – Developer / Designer
+
+Harshit Singh – Developer
+
+Hardik Chaurasiya – Designer / Frontend
+
+Divyanshu Kashyap – Developer / Backend
+
+🌟 Vision
+
+“Designing tomorrow’s web, today.”
+We aim to blend aesthetics with technology, delivering seamless digital solutions.
+
+🤝 Contributing
+
+Contributions are welcome! If you’d like to improve Aesthera, feel free to:
+
+Fork the repository
+
+Create a new branch (feature-branch)
+
+Commit your changes
+
+Push the branch
+
+Create a Pull Request
+
+📬 Contact
+
+📧 Email: aesthera.tech@gmail.com
+
+📱 Phone: +91-9415495215
+
+📜 License
+
+This project is licensed under the MIT License.
