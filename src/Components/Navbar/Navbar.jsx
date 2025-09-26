@@ -1,31 +1,33 @@
-import React, { useEffect, useState } from 'react'
-import './Navbar.css'
-import logo from '../../assets/abcd.png'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+import './Navbar.css';
+import logo from '../../assets/abcd.png';
 
 const Navbar = () => {
-
   const [sticky, setsticky] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 50 ? setsticky(true) : setsticky(false);
-    })
-  }, [])
+    const handleScroll = () => {
+      setsticky(window.scrollY > 50);
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-      <img src={logo} alt="" className='logo' />
+      <img src={logo} alt="Logo" className='logo' />
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Testimonials</li>
-        <li>Login</li>
-        <li><button className='btn'>Contact</button></li>
+        <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
+        <li><Link to='about' smooth={true} offset={0} duration={500}>About</Link></li>
+        <li><Link to='campus' smooth={true} offset={0} duration={500}>Devlopers</Link></li>
+        <li><Link to='Testimonials' smooth={true} offset={0} duration={500}>Testimonials</Link></li>
+        <li><Link to='login' smooth={true} offset={0} duration={500}>Login</Link></li>
+        <li><Link to='contact' smooth={true} offset={0} duration={500} className='btn'>Contact</Link></li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

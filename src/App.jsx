@@ -6,6 +6,8 @@ import Title from "./Components/Title/Title"
 import About from "./Components/About/About"
 import Campus from "./Components/Campus/Campus"
 import Testimonials from "./Components/Testimonials/Testimonials"
+import Contact from "./Components/Contact/Contact"
+import Foot from "./Components/Foot/Foot"
 
 
 const App = () => {
@@ -14,17 +16,19 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-        <Title subTitle='Our Project' Title='What We made'/>
+        <Title subTitle='Our Project' Title='What We made' />
         <Program />
         <About />
-        <Title subTitle='Behind the Code' Title='The Creative Minds Powering Aesthera'/>
+        <Title subTitle='Behind the Code' Title='The Creative Minds Powering Aesthera' />
         <Campus />
-        <Title subTitle='Voices of Aesthera' Title='Our Users Speak for Us'/>
+        <Title subTitle='Voices of Aesthera' Title='Our Users Speak for Us' />
         <Testimonials />
-        <Title subTitle='CONTACT US' Title='Let’s Connect and Collaborate'/>
+        <Title subTitle='CONTACT US' Title='Let’s Connect and Collaborate' />
+        <Contact />
+        <Foot />
       </div>
     </div>
-  ) 
+  )
 }
 
 export default App 

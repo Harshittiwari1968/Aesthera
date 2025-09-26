@@ -42,7 +42,7 @@ const Campus = () => {
             <img src={gallery_4} alt="" />
           </div>
           <div className="team-info">
-            <h2>Hardik Chaurasiya</h2>
+            <h2>Hardik Chaurasia</h2>
             <p>Frontend Developer</p>
           </div>
         </div>
