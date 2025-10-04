@@ -57,3 +57,28 @@
     justify-content: center;
     align-items: center;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 30px;      
+}
+
+.button-container .btn.dark-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  background:  #153690;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.button-container .btn.dark-btn:hover {
+  background: #000f38;
+  transform: translateY(-3px);
+}
