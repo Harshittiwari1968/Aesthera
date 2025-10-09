@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Campus.css';
 import gallery_1 from '../../assets/Harshit_Tiwari.png';
 import gallery_2 from '../../assets/Harshit_Singh.jpg';
-import gallery_3 from '../../assets/Divyanshu_Kashyap.png';
+import gallery_3 from '../../assets/Divyanshu.jpg';
 import gallery_4 from '../../assets/Hardik_chaurasia.jpg';
 import white_arrow from '../../assets/white-arrow.png';
 
