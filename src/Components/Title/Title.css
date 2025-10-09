@@ -1,15 +1,53 @@
-.title{
+.title {
     text-align: center;
     color: #312EA0;
     font-size: 15px;
-    font-weight: 600px;
+    font-weight: 600; /* fixed typo */
     text-transform: uppercase;
     margin: 70px 0 30px;
 }
 
-.title h2{
+.title h2 {
     font-size: 32px;
     color: #000f38;
     margin-top: 5px;
-    text-transform: none;;
+    text-transform: none;
+}
+
+/* 📱 Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 14px;
+        margin: 60px 0 25px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .title {
+        font-size: 13px;
+        margin: 50px 0 20px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .title {
+        font-size: 12px;
+        margin: 40px 0 15px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
 }

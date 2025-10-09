@@ -1,29 +1,121 @@
 .hero {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/unq.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url('../../assets/unq.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px; /* side padding for mobile */
 }
 
 .hero-text {
-    text-align: center;
-    max-width: 800px;
-    ;
+  max-width: 800px;
 }
 
 .hero-text h1 {
-    font-size: 45px;
-    font-weight: 600;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: 10px auto 20px;
-    line-height: 1.4;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.4;
+}
+
+/* Button inside Hero */
+.hero-text .btn {
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-text .btn img {
+  width: 20px;
+  height: auto;
+}
+
+/* 📱 Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-text .btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .hero-text .btn img {
+    width: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 40px 20px;
+    background-position: top;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-text .btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .hero-text .btn img {
+    width: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding: 30px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-text .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .hero-text .btn img {
+    width: 14px;
+  }
 }

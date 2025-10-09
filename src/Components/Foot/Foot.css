@@ -1,14 +1,64 @@
-.foot{
+.foot {
     margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #797979;
-    padding: 15px 0;
+    padding: 15px 10%;
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #ccc;
 }
 
-.foot ul li{
+.foot p {
+    margin: 5px 0;
+}
+
+.foot ul {
+    display: flex;
+    gap: 15px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.foot ul li {
     list-style: none;
-    display: inline-block;
-    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.foot ul li:hover {
+    color: white;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .foot {
+        padding: 15px 5%;
+    }
+
+    .foot ul {
+        gap: 12px;
+    }
+
+    .foot p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .foot ul {
+        flex-direction: column;
+        gap: 5px;
+    }
 }

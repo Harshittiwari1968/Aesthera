@@ -1,24 +1,27 @@
-.programs{
+.programs {
     margin: 80px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 30px;
 }
 
-.program img{
+.program {
+    flex-basis: 31%;
+    position: relative;
+    min-width: 250px;
+}
+
+.program img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
-.program{
-    flex-basis: 31%;
-    position: relative;
-
-}
-
-.caption{
+/* Caption overlay */
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -36,12 +39,51 @@
     transition: 0.4s;
 }
 
-.caption img{
-    width : 60px;
+.caption img {
+    width: 60px;
     margin-bottom: 10px;
 }
 
-.program:hover .caption{
+.program:hover .caption {
     opacity: 1;
-    padding-top: 0;
+}
+
+/* 📱 Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .program {
+        flex-basis: 45%;
+    }
+
+    .caption img {
+        width: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .program {
+        flex-basis: 100%;
+    }
+
+    .caption img {
+        width: 45px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .caption img {
+        width: 40px;
+    }
+
+    .programs {
+        margin: 40px auto;
+    }
 }

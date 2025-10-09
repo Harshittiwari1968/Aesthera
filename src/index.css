@@ -1,49 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* 🌎 Reset + Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    background: #f5f5f5;
+  background: #f5f5f5;
+  color: #212121;
+  line-height: 1.6;
 }
 
+/* 🔗 Links */
 a {
-    text-decoration: none;
-    color: inherit;
-    line-height: 1;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-.container{
-    padding-left: 10%;
-    padding-right: 10%;
+/* 📦 Container (main wrapper) */
+.container {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-.btn{
-    background: white;
-    color: #212121;
-    padding: 14px 25px;
-    font-size: 19px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+/* 🔘 Buttons */
+.btn {
+  background: white;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 19px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.btn img{
-    width: 20ox;
-    margin-left: 10px;
+.btn img {
+  width: 20px;
+  margin-left: 10px;
 }
 
-.btn.dark-btn{
-    background-color: #212EA0;
-    color: white;
+.btn.dark-btn {
+  background-color: #212EA0;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  .btn img {
+    width: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+/* ✨ Optional: Global font scaling for smoother look */
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
 }
